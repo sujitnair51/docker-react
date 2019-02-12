@@ -1,7 +1,7 @@
 sudo: required
 services:
   - docker
-before-install:
+before_install:
   - docker build -t sujitnair51/docker-react -f Dockerfile.dev .
 script:
-  - docker run sujitnair51/docker-react npm run test -- -- coverage
+  - docker run sujitnair51/docker-react npm run test -- --coverage
